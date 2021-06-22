@@ -21,4 +21,9 @@ fetch(url)
         // console.log(currentValue == true ? "checked" : "");
         // console.log(htmls);
         document.querySelector(".todo").innerHTML = htmls;
+        saveJson(json);
     });
+
+function saveJson(json) {
+    download(json, "json.txt", "text/plain");
+}
