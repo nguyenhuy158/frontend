@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+    margin: 10px;
+    padding: 0px;
+    width: 300px;
+    font-family: "Yanone Kaffeesatz", "Courier New", Courier, monospace;
+    font-size: 30px;
+}
+
+.main {
+    padding: 5px;
+    background-color: yellow;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.number {
+    width: 100px;
+    flex-grow: 2;
+}
+
+.number + .calculations {
+    margin-left: 10px;
+}
+
+.calculations {
+    flex-grow: 1;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row + .row {
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button + button {
+    margin-left: 5px;
+}
+
+/* adding */
+
+.hight-light {
+    background-color: red;
+    color: white;
+}
+
+.race {
+    display: flex;
+}
+.btn-zero {
+    width: auto;
+    flex-grow: 2;
+}
+.btn-dot {
+    width: auto;
+    flex-grow: 1;
+}
