@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a + a {
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav .logo {
+    margin: auto 0;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.copyRight {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    line-height: 100vh;
+}

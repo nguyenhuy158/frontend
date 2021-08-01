@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css");
+@import url("https://raw.githubusercontent.com/jgthms/bulma/master/css/bulma.css");
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+    margin: 10px;
+    padding: 0px;
+    font-family: "Yanone Kaffeesatz", "Courier New", Courier, monospace;
+    font-size: 30px;
+}
+
+.nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 0 10px;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.todo-list {
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
