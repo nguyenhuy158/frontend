@@ -14,6 +14,7 @@ let calculations = "";
 
 function changeScreen(value) {
     mainScreen.innerText = value;
+    // let x = 3;
 }
 
 console.log(btnPlus);

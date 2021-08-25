@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Slide</title>
+
+        <!-- box icon -->
+        <link
+            href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- icon animation -->
+        <link
+            rel="icon"
+            href="https://image.flaticon.com/icons/png/512/2371/2371580.png"
+        />
+
+        <!-- ionic icon -->
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- fontawesome icon -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+
+        <!-- my style -->
+        <link rel="stylesheet" href="./styles/render.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="container">
+            <ul class="nav-list">
+                <li class="nav-item active">Home</li>
+                <li class="nav-item">Project</li>
+                <li class="nav-item">Contact</li>
+                <li class="nav-item">About</li>
+            </ul>
+        </nav>
+
+        <div style="margin: 4rem"></div>
+        <nav class="container2" name="slide">
+            <ul class="nav-list">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">Project</li>
+                <li class="nav-item">Contact</li>
+                <li class="nav-item">About</li>
+                <div class="slide"></div>
+            </ul>
+        </nav>
+
+        <!-- script-->
+        <script src="./scripts/script.js"></script>
+        <script>
+            console.log("Give the world a reason to remember your name.");
+            $(document).ready(function () {
+                $(".container .nav-item").on("click", function (e) {
+                    // console.log(e.target);
+                    $(e.target).addClass("active");
+                    $(e.target).siblings().removeClass("active");
+                });
+
+                // slide
+                $(".container2 .nav-item").on("click", function (e) {
+                    let slide = $(e.target).parent().find(".slide");
+                    slide.css("width", $(e.target).css("width"));
+                    let left = 0;
+                    $(e.target)
+                        .prevAll()
+                        .each(function () {
+                            left += parseInt($(this).css("width"));
+                            // console.log(parseInt($(this).css("width")));
+                        });
+
+                    console.log(left);
+                    slide.css("left", `${left}px`);
+                });
+            });
+        </script>
+    </body>
+</html>

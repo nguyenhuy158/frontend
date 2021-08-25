@@ -10,25 +10,35 @@
             body {
                 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             }
+
             ul {
-                list-style-type: none;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
             }
+
             ul > li {
                 margin: 1rem;
+                display: block;
+                width: fit-content;
             }
+
             ul > li > a {
-                padding: 1rem;
+                text-decoration: none;
             }
         </style>
     </head>
+
     <body>
         <ul>
+            <li><a href="./weather/index.html">Weather</a></li>
+            <li><a href="./navigationSlide/index.html">slide</a></li>
             <li>
                 <a href="./calculator/index.html">Calculator</a>
-                <a href="./personalWeb/index.html">Personal Web</a>
-                <a href="./testJson/index.html">Test json</a>
-                <a href="./todoList/index.html">Todo list</a>
             </li>
+            <li><a href="./personalWeb/index.html">Personal Web</a></li>
+            <li><a href="./testJson/index.html">Test json</a></li>
+            <li><a href="./todoList/index.html">Todo list</a></li>
         </ul>
     </body>
 </html>

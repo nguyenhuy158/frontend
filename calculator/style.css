@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
 
-* {
+/* * {
     margin: 0px;
     padding: 0px;
-}
+} */
 
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */

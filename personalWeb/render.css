@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://lh3.googleusercontent.com/Y-dJpdCf_yxpJObrGAtYpmhdfR3ioYP_75YrO27sphhJNY6S0F6AV95P6DodHd6d-eQVfZJl3Opz0YZN-tRy1ZuGPunNoM-QhL6C5NJm1ptuil3jeG6wlmk8eldh06Z8szI9RRSDqvIRJlay2WFKNYHUrbjiQShtEAtJJoAHPvCBRBiZ4m0EYjDnU5KywdJiUSW3kcYMywjmyDvg2HM8pE0FawGTD3TCJjwnNKCvK77jn9C9KEm-cdX8f86ytTpnKb5lNBY8LzJlYSZzwRPMxSRzb9PE8w-RIw9cRKnBooDPKzTBpClgpmhhAxGWuFuNgttsqeFg3sybMlhfYdYgVphFPbG-VgbbpW0Vld1NctAzuOkE90YKD_fk8_uAfSeXNEVtQWsOuW1V1JIJ4iOPNO8lac_iFSDkW-v5ddWMYHFdpwuBhtkFAkvGSQRULL9-g2pCRADMR_C0MhAujGHawloGP8KHRueYE3RgXfZcbpHnfNLJ0DmbH-FgyCoORlQLCcSHHVjpiynkGaMLtKkEUua2hllb6w3pBDIIQkYHfgM_v2vYel16edc0s4YqFqaXx7EcMA3k22RNRnIrCZzsWJNUpFZy7IyCzugT_rgjg7RtfBvTnHwGWzPhl6IupLXplK_LLAOGEICirFDQB_L_XNyY_DGo_fVlzZLgBB-BAcqPlxacMZ6t1XHwUzLROrtsFHvP7Vow_moMbZ5CKPW51hzq=w973-h635-no?authuser=4);
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  color: #fff;
+  font-weight: bold;
+  filter: drop-shadow(0px 0px 5px #555);
+}
+body .container {
+  font-size: 10rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container span {
+  letter-spacing: 10rem;
+  margin-right: -10rem;
+}
+body .footer {
+  display: flex;
+  justify-content: space-between;
+}
+body .footer .item {
+  width: 100%;
+  padding: 0 1rem;
+  border-top: 4px solid #817358;
+  position: relative;
+  overflow: hidden;
+}
+body .footer .item:first-of-type {
+  border-right: 2px solid #817358;
+}
+body .footer .item:first-of-type:after {
+  content: "";
+  background-color: #817358;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%) rotate(45deg);
+}
+body .footer .item:last-of-type {
+  border-left: 2px solid #817358;
+}
+body .footer .item:last-of-type:after {
+  content: "";
+  background-color: #817358;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/*# sourceMappingURL=render.css.map */
